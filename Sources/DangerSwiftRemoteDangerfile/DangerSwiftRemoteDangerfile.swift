@@ -5,7 +5,7 @@ import Danger
 import Foundation
 import ShellOut // <-- Add import
 
-public struct DangerSwiftRemoteDangerfile {
+public struct RemoteDangerfile {
 
     private let danger: DangerDSL
 

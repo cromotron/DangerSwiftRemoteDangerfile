@@ -8,4 +8,4 @@
 import Danger
 import DangerSwiftRemoteDangerfile
 
-DangerSwiftRemoteDangerfile().checkForCopyrightHeaders()
+RemoteDangerfile().checkForCopyrightHeaders()
