@@ -1,5 +1,4 @@
 {
-  "originHash" : "afe774f0a86dd81b5a474460e91cd0c0b269ea425c4da9f2eefe5b7c8cd4b4a1",
   "pins" : [
     {
       "identity" : "logger",
@@ -20,30 +19,12 @@
       }
     },
     {
-      "identity" : "packageconfig",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/shibapm/PackageConfig.git",
-      "state" : {
-        "revision" : "58523193c26fb821ed1720dcd8a21009055c7cdb",
-        "version" : "1.1.3"
-      }
-    },
-    {
       "identity" : "requestkit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nerdishbynature/RequestKit.git",
       "state" : {
         "revision" : "e4d905fed938807e36d87f28375f88b7c1c26840",
         "version" : "3.3.0"
-      }
-    },
-    {
-      "identity" : "rocket",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/f-meloni/Rocket",
-      "state" : {
-        "revision" : "32af356776108ee7289884874a0eb63ceacb9e5d",
-        "version" : "1.3.0"
       }
     },
     {
@@ -65,15 +46,6 @@
       }
     },
     {
-      "identity" : "swiftshell",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/kareman/SwiftShell",
-      "state" : {
-        "revision" : "99680b2efc7c7dbcace1da0b3979d266f02e213c",
-        "version" : "5.1.0"
-      }
-    },
-    {
       "identity" : "version",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mxcl/Version",
@@ -81,16 +53,7 @@
         "revision" : "303a0f916772545e1e8667d3104f83be708a723c",
         "version" : "2.1.0"
       }
-    },
-    {
-      "identity" : "yams",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jpsim/Yams",
-      "state" : {
-        "revision" : "b4b8042411dc7bbb696300a34a4bf3ba1b7ad19b",
-        "version" : "5.3.1"
-      }
     }
   ],
-  "version" : 3
+  "version" : 2
 }
