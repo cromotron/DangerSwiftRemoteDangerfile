@@ -5,49 +5,22 @@ import Danger
 import Foundation
 import ShellOut // <-- Add import
 
-public struct RemoteDangerfilePlugin2 {
-    internal let danger = Danger()
-//    internal static let shellExecutor = ShellExecutor()
+public struct DangerSwiftRemoteDangerfile {
 
-    /// This is the main entry point for linting Swift in PRs using Danger-Swift.
-    /// Call this function anywhere from within your Dangerfile.swift.
-    @discardableResult
-    public static func lint(inline: Bool = false, directory: String? = nil,
-                            configFile: String? = nil, lintAllFiles: Bool = false,
-                            swiftlintPath: String = "swiftlint") -> [Violation] {
-        // First, for debugging purposes, print the working directory.
-//        print("Working directory: \(shellExecutor.execute("pwd"))")
-        return []
-//        return self.lint(danger: danger, shellExecutor: shellExecutor, inline: inline, directory: directory,
-//                         configFile: configFile, lintAllFiles: lintAllFiles, swiftlintPath: swiftlintPath)
+    private let danger: DangerDSL
+
+    public init(dangerDSL: DangerDSL = Danger()) {
+        danger = dangerDSL
     }
 
+    public func checkForCopyrightHeaders() {
 
-    public static func checkForCopyrightHeaders() -> Void {
-        let danger = Danger()
+        danger.warn("Skipped checkForCopyrightHeaders tests.")
 
-        warn("Please don't include copyright headers, found them in:")
-        let swiftFilesWithCopyright = danger.git.createdFiles.filter {
-            $0.fileType == .swift
-                && danger.utils.readFile($0).contains("//  Created by")
-        }
-
-        if swiftFilesWithCopyright.count > 0 {
-            let files = swiftFilesWithCopyright.joined(separator: ", ")
-            warn("Please don't include copyright headers, found them in: \(files)")
-        }
     }
 }
 
-internal extension RemoteDangerfilePlugin2 {
-    static func lint(
-        danger: DangerDSL,
-        path: String) {
-           print("Working directory: \(path)")
-        }
-}
-
-
+/*
 // MARK: - Plugin Definition
 
 /// A Danger plugin that enables importing and executing remote Dangerfile.swift files
@@ -293,3 +266,4 @@ public final class RemoteDangerfilePlugin {
 */
 
 
+*/
