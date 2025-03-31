@@ -1,5 +1,15 @@
 {
+  "originHash" : "445669c8e0800483e6dad0be55b0a23c4223d1b790b7440317d9b0e47ed3536d",
   "pins" : [
+    {
+      "identity" : "danger-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/danger/danger-swift.git",
+      "state" : {
+        "revision" : "bb4faf2c5613960b3de954c631cedd4dc63c3fef",
+        "version" : "3.21.1"
+      }
+    },
     {
       "identity" : "logger",
       "kind" : "remoteSourceControl",
@@ -28,24 +38,6 @@
       }
     },
     {
-      "identity" : "shellout",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/JohnSundell/ShellOut.git",
-      "state" : {
-        "revision" : "e1577acf2b6e90086d01a6d5e2b8efdaae033568",
-        "version" : "2.3.0"
-      }
-    },
-    {
-      "identity" : "swift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/danger/swift.git",
-      "state" : {
-        "revision" : "bb4faf2c5613960b3de954c631cedd4dc63c3fef",
-        "version" : "3.21.1"
-      }
-    },
-    {
       "identity" : "version",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mxcl/Version",
@@ -55,5 +47,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
