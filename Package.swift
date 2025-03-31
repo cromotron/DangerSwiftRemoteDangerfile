@@ -11,13 +11,13 @@ let package = Package(
             targets: ["DangerRemoteImport"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/danger/danger-swift.git", from: "3.0.0")
+        .package(url: "https://github.com/danger/swift.git", from: "3.0.0")
     ],
     targets: [
         .target(
             name: "DangerRemoteImport",
             dependencies: [
-                .product(name: "Danger", package: "danger-swift")
+                .product(name: "Danger", package: "swift")
             ]
         ),
 //        .testTarget(
